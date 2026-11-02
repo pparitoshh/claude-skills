@@ -82,14 +82,6 @@ herdr agent start worker --kind <worker-kind> --pane "$W"
 herdr agent start brain  --kind <brain-kind>  --pane "$B"
 ```
 
-For an OpenCode agent, always select a model from the OpenCode Go provider (`opencode-go/...`). Do not use `opencode/...` models: their API key expired. Pass the model after `--`:
-
-```bash
-herdr agent start worker --kind opencode --pane "$W" -- --model opencode-go/glm-5.3-flash
-```
-
-List the available models with `opencode models | grep '^opencode-go/'`.
-
 If a start returns `agent_not_ready` (for example a trust or login dialog), run `herdr agent read <name> --source visible`, show the screen to the user and ask what to do. Do not answer dialogs for the user.
 
 ## Step 6 - Give each agent its role

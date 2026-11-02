@@ -1,6 +1,7 @@
 {
   "name": "brain-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set up a Herdr brain + worker pair: a supervisor agent and an executor agent.",
-  "author": { "name": "pparitoshh" }
+  "author": { "name": "pparitoshh" },
+  "license": "MIT"
 }
