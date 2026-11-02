@@ -1,0 +1,6 @@
+{
+  "name": "brain-worker",
+  "version": "1.0.0",
+  "description": "Set up a Herdr brain + worker pair: a supervisor agent and an executor agent.",
+  "author": { "name": "pparitoshh" }
+}
