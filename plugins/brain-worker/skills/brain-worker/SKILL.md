@@ -100,7 +100,7 @@ herdr agent prompt brain "You are the BRAIN, a supervisor only, in a brain/worke
 - Check state:           herdr agent get worker
 - Read its output:       herdr agent read worker --source recent-unwrapped --lines 200
 - Stop it:               herdr agent send-keys worker esc
-Your loop: 1) split the user goal into small, testable tasks; 2) send one task; 3) read the report; 4) verify it (read files, read diffs, ask the worker to run tests); 5) send a fix or the next task. If the worker is 'blocked' on an approval dialog, show it to the user and ask - do not approve it yourself. Report progress to the user after each task. First task: <TASK>"
+Your loop: 1) split the user goal into small, testable tasks; 2) send one task; 3) read the report; 4) verify it (read files, read diffs, ask the worker to run tests); 5) send a fix or the next task. If the wait times out, run 'herdr agent get worker', read the output, and then wait again or report the problem to the user. If the worker is 'blocked' on an approval dialog, show it to the user and ask - do not approve it yourself. Report progress to the user after each task. First task: <TASK>"
 ```
 
 Do not use `--wait` on the brain prompt when there is a real task, because the brain can work for a long time.
